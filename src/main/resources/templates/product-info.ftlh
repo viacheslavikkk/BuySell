@@ -4,10 +4,11 @@
     <title>BUYSELL</title>
 </head>
 <body>
-<H1>BUYSELL</H1><hr>
+<H1>BUYSELL</H1>
+<hr>
 <H4>More about item</H4>
 <#list images as img>
-    <img src="/image/${img.id}" height="60px"/><br><br>
+    <img src="/images/${img.id}" height="60px"><br><br>
 </#list>
 <b>Name of item: </b> ${product.title}<br>
 <b>Description: </b> ${product.description}<br>

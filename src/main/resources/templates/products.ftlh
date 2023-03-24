@@ -25,6 +25,7 @@
     First photo: <input type="file" name="file1"/><br><br>
     Second photo: <input type="file" name="file2"/><br><br>
     Third photo: <input type="file" name="file3"/><br><br>
+
     <input type="submit" value="Add item">
 </form>
 </body>
