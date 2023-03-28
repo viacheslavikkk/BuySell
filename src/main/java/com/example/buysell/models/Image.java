@@ -1,9 +1,10 @@
 package com.example.buysell.models;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "images")
@@ -13,23 +14,23 @@ import lombok.NoArgsConstructor;
 public class Image {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name")
     private String name;
 
-    @Column(name = "originalFileName")
+    @Column(name = "original_file_name")
     private String originalFileName;
 
     @Column(name = "size")
     private Long size;
 
-    @Column(name = "contentType")
+    @Column(name = "content_type")
     private String contentType;
 
-    @Column(name = "isPreviewImage")
+    @Column(name = "is_preview_image")
     private boolean isPreviewImage;
 
     @Lob

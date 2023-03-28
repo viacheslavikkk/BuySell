@@ -4,7 +4,11 @@
     <title>BUYSELL</title>
 </head>
 <body>
-<H1>BUYSELL</H1><hr>
+<H1>BUYSELL | <a href="/login">Enter</a></H1><hr>
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <input type="submit" value="Exit">
+</form>
 <H4>Items</H4>
 <form action="/" method="get">
     Find by name: <input type="text" name="title"><br>
